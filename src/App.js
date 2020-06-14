@@ -32,15 +32,24 @@ function App() {
     fontFamily: "sans-serif"
   }
 
+  var bodyStyle = {
+    marginLeft: "100px",
+    marginTop: "15%",
+    width: "65%",
+    color: "white",
+    fontFamily: "sans-serif",
+    fontSize: "32px"
+  }
+
   return (
     <div className="App" style={fatherStyle}>
-      <div id="header" style={headerStyle}>
+      <div style={headerStyle}>
           <img src={logo} alt="Logo" style={logoStyle}/>
           <h2 style={headerItem}>InfoTrecho</h2>
       </div>
 
-      <div>
-        
+      <div style={bodyStyle}>
+        <h1>Movimentação de cargas tem alta de 13% em maio</h1>
       </div>
     </div>
   );
