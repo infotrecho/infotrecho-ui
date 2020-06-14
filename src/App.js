@@ -34,11 +34,24 @@ function App() {
 
   var bodyStyle = {
     marginLeft: "100px",
-    marginTop: "15%",
+    marginTop: "10%",
     width: "65%",
+  }
+
+  var bodyPStyle = {
+    width: "50%",
+  }
+
+  var h1Style = {
     color: "white",
     fontFamily: "sans-serif",
-    fontSize: "32px"
+    fontSize: "72px"
+  }
+
+  var pStyle = {
+    color: "white",
+    fontFamily: "sans-serif",
+    fontSize: "21px"
   }
 
   return (
@@ -49,7 +62,10 @@ function App() {
       </div>
 
       <div style={bodyStyle}>
-        <h1>Movimentação de cargas tem alta de 13% em maio</h1>
+        <h1 style={h1Style}>Movimentação de cargas tem alta de 13% em maio</h1>
+        <div style={bodyPStyle}>
+          <p style={pStyle}>A movimentação de cargas em maio no Brasil foi de R$ 482 bilhões, o que representa aumento de 13% em relação a abril, que contabilizou R$ 430 bilhões. Os dados são da AT&M Tecnologia, empresa que detém mais de 90% do mercado de seguros de transporte de cargas.</p>
+        </div>
       </div>
     </div>
   );
