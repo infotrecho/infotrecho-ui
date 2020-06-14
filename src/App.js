@@ -3,6 +3,7 @@ import './App.css'
 
 import background from './resources/white-truck.png'
 import logo from './resources/caminhao-infotrecho.png'
+import { Button, Input, Form } from 'semantic-ui-react';
 
 function App() {
 
@@ -54,6 +55,17 @@ function App() {
     fontSize: "21px"
   }
 
+  var footerStyle = {
+    backgroundColor: 'white',
+    height: "150px",
+    margin: "125px 50px 0px 45%",
+    padding: "45px 0 0 65px"
+  }
+
+  var buttomForm = {
+    margin: "24px 0 0 0"
+  }
+
   return (
     <div className="App" style={fatherStyle}>
       <div style={headerStyle}>
@@ -66,6 +78,18 @@ function App() {
         <div style={bodyPStyle}>
           <p style={pStyle}>A movimentação de cargas em maio no Brasil foi de R$ 482 bilhões, o que representa aumento de 13% em relação a abril, que contabilizou R$ 430 bilhões. Os dados são da AT&M Tecnologia, empresa que detém mais de 90% do mercado de seguros de transporte de cargas.</p>
         </div>
+      </div>
+      
+      <div style={footerStyle}>
+      <Form>
+        <Form.Group widths='equal'>
+          <Form.Input fluid label='Nome' placeholder="Ex: João da Silva" />
+          <Form.Input fluid label='Número de WhatsApp' placeholder="(00) 00000-0000" />
+          <Form.Input fluid label='Perfil do Facebook' placeholder="facebook.com/joaodasilva" />
+          <Form.Button icon="send" color="orange" style={buttomForm}/>
+        </Form.Group>
+        
+      </Form>
       </div>
     </div>
   );
