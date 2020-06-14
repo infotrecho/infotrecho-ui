@@ -20,17 +20,27 @@ function App() {
     width: "100%",
   }
 
+  var logoStyle = {
+    marginTop: "10px"
+  }
+
   var headerItem = { 
     display: "inline",
-    marginBottom: "30px",
-    marginLeft: "10px"
+    position: "absolute",
+    marginLeft: "10px",
+    color: "white",
+    fontFamily: "sans-serif"
   }
 
   return (
     <div className="App" style={fatherStyle}>
       <div id="header" style={headerStyle}>
-          <img src={logo} alt="Logo" />
+          <img src={logo} alt="Logo" style={logoStyle}/>
           <h2 style={headerItem}>InfoTrecho</h2>
+      </div>
+
+      <div>
+        
       </div>
     </div>
   );
