@@ -58,12 +58,27 @@ function App() {
   var footerStyle = {
     backgroundColor: 'white',
     height: "150px",
-    margin: "125px 50px 0px 45%",
+    margin: "125px 100px 0px 100px",
     padding: "45px 0 0 65px"
+  }
+
+  var footerStyleDiv = {
+    backgroundColor: '#0097E6',
+    height: "55px",
+    width: "300px",
+    paddingTop:"12px",
+    margin: "-70px 0 20px -40px"
   }
 
   var buttomForm = {
     margin: "24px 0 0 0"
+  }
+
+  var pDivStyle = {
+    color: "white",
+    fontFamily: "sans-serif",
+    textAlign: "center",
+    fontSize: "21px"
   }
 
   return (
@@ -81,15 +96,19 @@ function App() {
       </div>
       
       <div style={footerStyle}>
-      <Form>
-        <Form.Group widths='equal'>
-          <Form.Input fluid label='Nome' placeholder="Ex: João da Silva" />
-          <Form.Input fluid label='Número de WhatsApp' placeholder="(00) 00000-0000" />
-          <Form.Input fluid label='Perfil do Facebook' placeholder="facebook.com/joaodasilva" />
-          <Form.Button icon="send" color="orange" style={buttomForm}/>
-        </Form.Group>
-        
-      </Form>
+        <div style={footerStyleDiv}>
+          <p style={pDivStyle}>Complete seu cadastro</p>
+      </div>
+      <div>
+        <Form>
+          <Form.Group widths='equal'>
+            <Form.Input fluid label='Nome' placeholder="Ex: João da Silva" />
+            <Form.Input fluid label='Número de WhatsApp' placeholder="(00) 00000-0000" />
+            <Form.Input fluid label='Perfil do Facebook' placeholder="facebook.com/joaodasilva" />
+            <Form.Button icon="send" color="orange" style={buttomForm}/>
+          </Form.Group>
+        </Form>
+      </div>
       </div>
     </div>
   );
