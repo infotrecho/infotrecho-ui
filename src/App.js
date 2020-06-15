@@ -3,9 +3,12 @@ import './App.css'
 
 import background from './resources/white-truck.png'
 import logo from './resources/caminhao-infotrecho.png'
-import { Button, Input, Form } from 'semantic-ui-react';
+import { Form } from 'semantic-ui-react';
 
 function App() {
+  const actionHandler = () => {
+    alert("Você foi cadastrado com sucesso!");
+  }
 
   var fatherStyle = {
     position: "fixed",
@@ -34,9 +37,9 @@ function App() {
   }
 
   var bodyStyle = {
-    marginLeft: "100px",
-    marginTop: "10%",
-    width: "65%",
+    marginLeft: "250px",
+    marginTop: "8%",
+    width: "55%",
   }
 
   var bodyPStyle = {
@@ -105,7 +108,7 @@ function App() {
             <Form.Input fluid label='Nome' placeholder="Ex: João da Silva" />
             <Form.Input fluid label='Número de WhatsApp' placeholder="(00) 00000-0000" />
             <Form.Input fluid label='Perfil do Facebook' placeholder="facebook.com/joaodasilva" />
-            <Form.Button icon="send" color="orange" style={buttomForm}/>
+            <Form.Button icon="send" color="orange" style={buttomForm} onClick={actionHandler}/>
           </Form.Group>
         </Form>
       </div>
